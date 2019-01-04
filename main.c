@@ -79,6 +79,8 @@ main(void)
 	if ((namespace = mdict_new()) == NULL)
 		errx(1, "mdict_new failed");
 	define(namespace, "v1=asdasd");
+	define(namespace, "a.b=QWE.123");
+	
 	if (mtemplate_run_stdio(t, namespace, stdout, buf, sizeof(buf)) == -1)
 		errx(1, "mtemplate_run: %s", buf);
 
