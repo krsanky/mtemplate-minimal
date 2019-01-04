@@ -1,0 +1,3 @@
+{{if a.b}}text is a.b is true...
+{{else}}more text if a.b is false...{{endif}}
+
