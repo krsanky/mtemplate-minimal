@@ -8,7 +8,7 @@ tmpl: main.c mtemplate/libmtemplate.a
 	$(CC) $(CFLAGS) -o $@ main.c $(LDFLAGS) -lmtemplate
 
 clean:
-	rm -f tmpl
+	rm -f tmpl *.core
 
 .PHONY: clean 
 
