@@ -78,6 +78,7 @@ main(void)
 
 	if ((namespace = mdict_new()) == NULL)
 		errx(1, "mdict_new failed");
+
 	define(namespace, "v1=asdasd");
 	define(namespace, "a.b=QWE.123");
 	
